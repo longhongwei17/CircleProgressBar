@@ -7,21 +7,33 @@
 //
 
 #import "ViewController.h"
+#import "CircleProgressBar.h"
 
 @interface ViewController ()
+@property (strong, nonatomic) CircleProgressBar *circleProgress;
 
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    _circleProgress = [[CircleProgressBar alloc] initWithFrame:CGRectMake(100, 70, 80 , 80)];
+    _circleProgress.trackColor = [UIColor blackColor];
+    _circleProgress.progressColor = [UIColor orangeColor];
+    _circleProgress.progressWidth = 10;
+    
+    [self.view addSubview:self.circleProgress];
+    
+    [_circleProgress startEndTimerval:10];
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+   
 }
 
 @end

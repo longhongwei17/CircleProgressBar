@@ -16,6 +16,7 @@
 		0F6EB1971CB7581C00AED675 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F6EB1951CB7581C00AED675 /* LaunchScreen.storyboard */; };
 		0F6EB1A21CB7581C00AED675 /* CircleProgressBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6EB1A11CB7581C00AED675 /* CircleProgressBarTests.m */; };
 		0F6EB1AD1CB7581C00AED675 /* CircleProgressBarUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6EB1AC1CB7581C00AED675 /* CircleProgressBarUITests.m */; };
+		0F6EB1BC1CB7583700AED675 /* CircleProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6EB1BB1CB7583700AED675 /* CircleProgressBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		0F6EB1A81CB7581C00AED675 /* CircleProgressBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CircleProgressBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F6EB1AC1CB7581C00AED675 /* CircleProgressBarUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleProgressBarUITests.m; sourceTree = "<group>"; };
 		0F6EB1AE1CB7581C00AED675 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F6EB1BA1CB7583700AED675 /* CircleProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleProgressBar.h; sourceTree = "<group>"; };
+		0F6EB1BB1CB7583700AED675 /* CircleProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleProgressBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +116,8 @@
 				0F6EB1981CB7581C00AED675 /* Info.plist */,
 				0F6EB1901CB7581C00AED675 /* CircleProgressBar.xcdatamodeld */,
 				0F6EB1841CB7581C00AED675 /* Supporting Files */,
+				0F6EB1BA1CB7583700AED675 /* CircleProgressBar.h */,
+				0F6EB1BB1CB7583700AED675 /* CircleProgressBar.m */,
 			);
 			path = CircleProgressBar;
 			sourceTree = "<group>";
@@ -277,6 +282,7 @@
 				0F6EB1891CB7581C00AED675 /* AppDelegate.m in Sources */,
 				0F6EB1921CB7581C00AED675 /* CircleProgressBar.xcdatamodeld in Sources */,
 				0F6EB1861CB7581C00AED675 /* main.m in Sources */,
+				0F6EB1BC1CB7583700AED675 /* CircleProgressBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,7 +374,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -407,7 +413,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -420,6 +426,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CircleProgressBar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sss.CircleProgressBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -431,6 +438,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CircleProgressBar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sss.CircleProgressBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
