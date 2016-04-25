@@ -95,6 +95,7 @@
 {
     CGPoint center = CGPointMake(CGRectGetMidX(_trackLayer.frame), CGRectGetMidY(_trackLayer.frame));
     _trackPath = [UIBezierPath bezierPathWithArcCenter:center radius:(self.bounds.size.width - _progressWidth)/ 2 startAngle:- M_PI_2 endAngle:M_PI * 1.5 clockwise:YES];
+
     _trackLayer.path = _trackPath.CGPath;
 }
 
@@ -102,6 +103,7 @@
 {
     CGPoint center = CGPointMake(CGRectGetMidX(_progressLayer.frame), CGRectGetMidY(_progressLayer.frame));
     _progressPath = [UIBezierPath bezierPathWithArcCenter:center radius:(self.bounds.size.width - _progressWidth)/ 2 startAngle:- M_PI_2 endAngle:(M_PI * 2) * _progress - M_PI_2 clockwise:YES];
+
     _progressLayer.path = _progressPath.CGPath;
 }
 
