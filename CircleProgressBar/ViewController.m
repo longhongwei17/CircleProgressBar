@@ -20,6 +20,7 @@
 {
     [super viewDidLoad];
     
+    // 我添加了代码
     _circleProgress = [[CircleProgressBar alloc] initWithFrame:CGRectMake(100, 70, 80 , 80)];
     _circleProgress.trackColor = [UIColor blackColor];
     _circleProgress.progressColor = [UIColor orangeColor];
