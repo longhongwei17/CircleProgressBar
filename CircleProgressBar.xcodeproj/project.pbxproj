@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A4393D41161EE660D7A41F7 /* libPods-CircleProgressBar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A16A98C16A9C9FE5A8445E29 /* libPods-CircleProgressBar.a */; };
 		0F6EB1861CB7581C00AED675 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6EB1851CB7581C00AED675 /* main.m */; };
 		0F6EB1891CB7581C00AED675 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6EB1881CB7581C00AED675 /* AppDelegate.m */; };
 		0F6EB18C1CB7581C00AED675 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6EB18B1CB7581C00AED675 /* ViewController.m */; };
@@ -56,6 +57,9 @@
 		0F6EB1AE1CB7581C00AED675 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F6EB1BA1CB7583700AED675 /* CircleProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleProgressBar.h; sourceTree = "<group>"; };
 		0F6EB1BB1CB7583700AED675 /* CircleProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleProgressBar.m; sourceTree = "<group>"; };
+		285F51DA298358C06F55ACD0 /* Pods-CircleProgressBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CircleProgressBar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CircleProgressBar/Pods-CircleProgressBar.debug.xcconfig"; sourceTree = "<group>"; };
+		8A0EC9AAC5991B80F28D39FB /* Pods-CircleProgressBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CircleProgressBar.release.xcconfig"; path = "Pods/Target Support Files/Pods-CircleProgressBar/Pods-CircleProgressBar.release.xcconfig"; sourceTree = "<group>"; };
+		A16A98C16A9C9FE5A8445E29 /* libPods-CircleProgressBar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CircleProgressBar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A4393D41161EE660D7A41F7 /* libPods-CircleProgressBar.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +95,8 @@
 				0F6EB1A01CB7581C00AED675 /* CircleProgressBarTests */,
 				0F6EB1AB1CB7581C00AED675 /* CircleProgressBarUITests */,
 				0F6EB1821CB7581B00AED675 /* Products */,
+				8B1C6699B9808DE1DAD80B26 /* Pods */,
+				9AD6D0036EAB9E2AA9C3601C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,6 +155,23 @@
 			path = CircleProgressBarUITests;
 			sourceTree = "<group>";
 		};
+		8B1C6699B9808DE1DAD80B26 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				285F51DA298358C06F55ACD0 /* Pods-CircleProgressBar.debug.xcconfig */,
+				8A0EC9AAC5991B80F28D39FB /* Pods-CircleProgressBar.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9AD6D0036EAB9E2AA9C3601C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A16A98C16A9C9FE5A8445E29 /* libPods-CircleProgressBar.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -155,9 +179,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0F6EB1B11CB7581C00AED675 /* Build configuration list for PBXNativeTarget "CircleProgressBar" */;
 			buildPhases = (
+				46BCEAC5AB0BF5DBC89058BC /* [CP] Check Pods Manifest.lock */,
 				0F6EB17D1CB7581B00AED675 /* Sources */,
 				0F6EB17E1CB7581B00AED675 /* Frameworks */,
 				0F6EB17F1CB7581B00AED675 /* Resources */,
+				3E6A7FCDEFBB9C0D4977136F /* [CP] Embed Pods Frameworks */,
+				0C61F59832F4F829FC4A06CF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -272,6 +299,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C61F59832F4F829FC4A06CF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CircleProgressBar/Pods-CircleProgressBar-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E6A7FCDEFBB9C0D4977136F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CircleProgressBar/Pods-CircleProgressBar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46BCEAC5AB0BF5DBC89058BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0F6EB17D1CB7581B00AED675 /* Sources */ = {
@@ -423,6 +498,7 @@
 		};
 		0F6EB1B21CB7581C00AED675 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 285F51DA298358C06F55ACD0 /* Pods-CircleProgressBar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CircleProgressBar/Info.plist;
@@ -435,6 +511,7 @@
 		};
 		0F6EB1B31CB7581C00AED675 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A0EC9AAC5991B80F28D39FB /* Pods-CircleProgressBar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CircleProgressBar/Info.plist;
