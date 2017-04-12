@@ -17,6 +17,7 @@
 		0F6EB1A21CB7581C00AED675 /* CircleProgressBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6EB1A11CB7581C00AED675 /* CircleProgressBarTests.m */; };
 		0F6EB1AD1CB7581C00AED675 /* CircleProgressBarUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6EB1AC1CB7581C00AED675 /* CircleProgressBarUITests.m */; };
 		0F6EB1BC1CB7583700AED675 /* CircleProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6EB1BB1CB7583700AED675 /* CircleProgressBar.m */; };
+		54D0CE7F1E9E0654001803DF /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D0CE7E1E9E0654001803DF /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		0F6EB1AE1CB7581C00AED675 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F6EB1BA1CB7583700AED675 /* CircleProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleProgressBar.h; sourceTree = "<group>"; };
 		0F6EB1BB1CB7583700AED675 /* CircleProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleProgressBar.m; sourceTree = "<group>"; };
+		54D0CE7D1E9E0654001803DF /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		54D0CE7E1E9E0654001803DF /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +121,8 @@
 				0F6EB1841CB7581C00AED675 /* Supporting Files */,
 				0F6EB1BA1CB7583700AED675 /* CircleProgressBar.h */,
 				0F6EB1BB1CB7583700AED675 /* CircleProgressBar.m */,
+				54D0CE7D1E9E0654001803DF /* Person.h */,
+				54D0CE7E1E9E0654001803DF /* Person.m */,
 			);
 			path = CircleProgressBar;
 			sourceTree = "<group>";
@@ -278,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54D0CE7F1E9E0654001803DF /* Person.m in Sources */,
 				0F6EB18C1CB7581C00AED675 /* ViewController.m in Sources */,
 				0F6EB1891CB7581C00AED675 /* AppDelegate.m in Sources */,
 				0F6EB1921CB7581C00AED675 /* CircleProgressBar.xcdatamodeld in Sources */,
@@ -510,6 +516,7 @@
 				0F6EB1B31CB7581C00AED675 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0F6EB1B41CB7581C00AED675 /* Build configuration list for PBXNativeTarget "CircleProgressBarTests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +525,7 @@
 				0F6EB1B61CB7581C00AED675 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0F6EB1B71CB7581C00AED675 /* Build configuration list for PBXNativeTarget "CircleProgressBarUITests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +534,7 @@
 				0F6EB1B91CB7581C00AED675 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

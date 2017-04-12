@@ -48,6 +48,15 @@
     return self;
 }
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        [self initialize];
+    }
+    return self;
+}
+
 - (void)initialize
 {
     self.progress = 0.f;
